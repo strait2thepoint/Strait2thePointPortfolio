@@ -2,11 +2,16 @@ body {
     display: flex;
     flex-direction: column;
     line-height: 1.5;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--font)
   }
   
   :root {
     --light:#E5F1E7;
     --bars: #5B532E;
+    --aside: #CBD795;
+    --font: #1b190e;
+    --pad: 5px;
 }
 
   header {
@@ -14,19 +19,20 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: var(--bars);
-    color: var(--light);
+    color: var(--font);
   }
   
   h1 {
     display: flex;
     font-size: 200%;
-    margin:27px, 27px, 7px;
-    border:solid #CBD795;
+    padding: 0.8%;
+    margin:30px;
+    background-color: var(--aside);
   }
   
   h2 {
-    margin: 2% 0;
-    font-size: 180%;
+    font-size: 160%;
+    color: var(--font)
   }
   
   nav ul {
@@ -43,13 +49,27 @@ body {
   }
   
   nav a:hover {
-    color: var(--light);
+    color: var(--font);
   }
 
-div img{
-  display: block;
-  width: 100%;
+.container {
+  position: relative;
+  max-width: 100%;
   height: auto;
+}
+
+#img{
+  max-width: 100%;
+}
+
+.text-block {
+  position: absolute;
+  bottom: var(--pad);
+  right: 15%;
+  background-color: #e5f1e744;
+  color: var(--bars);
+  padding-left: var(--pad);
+  padding-right: var(--pad);
 }
   
 main {
