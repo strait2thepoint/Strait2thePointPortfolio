@@ -2,14 +2,14 @@ body {
     display: flex;
     flex-direction: column;
     line-height: 1.5;
-    font-family: Arial, Helvetica, sans-serif
-    color: var(--font)
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--font);
   }
   
   :root {
     --F: flex;
     --R: row;
-    --w: 70%;
+    --w: 75%;
     --light: #f5fdd3;
     --bars: #103100;
     --aside: #CBD795;
@@ -96,7 +96,7 @@ main {
 .aside {
   display: var(--F);
   flex-direction: var(--R);
-  width: 30%;
+  width: 25%;
   padding: var(--pad2) ;
   height: 75vh;
   background-color: #CBD795;
@@ -110,69 +110,35 @@ main {
   width: var(--w);
   text-align: center;
   padding: var(--pad2); 
-  height 75vh
+  height: 75vh;
   background-color: var(--light);
   font-size: 1.3rem;
 }
 
-div a img{
+.div a img{
   display: var(--F);
   flex-direction: var(--R);
-  width: var(--w);
-  padding: var(--pad2;)
+  width: 100%;
+  opacity: 1.0;
+  border: solid var(--bars);
+}
+ 
+.div a img:hover{
+  opacity: 0.5;
 }
 
 
 
 
 
-
-
-
-  /*
-  .projects {
-    flex: 4;
-    background-color: var(--light);
-    padding: 60x;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
-  }
-  
-  .card {
-    border-style: solid;
-    border-width: 1px;
-    padding: 30px;
-    flex: 0 0 300px;
-    margin: 20px;
-  }
-  
-  .card header {
-    padding: 40px;
-    color: var(--light);
-  }
-
-  .card header:hover {
-    color: #FEE505;
-  }
-  
-  .card p {
-    text-align: center;
-  }
-  
-  .card img {
-    width: 100%;
-  }*/
-
-   footer {
-    width: 100%;
-    bottom: 0;
-    padding: 20px;
-    text-align: center;
-    background: var(--bars);
-    color: var(--light);
-    margin-top: auto;
+footer {
+  width: 100%;
+  bottom: 0;
+  padding: 20px;
+  text-align: center;
+  background: var(--bars);
+  color: var(--light);
+  margin-top: auto;
   }
 
   @media screen and (max-width: 768px) {
