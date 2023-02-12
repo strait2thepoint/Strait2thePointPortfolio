@@ -109,8 +109,7 @@ main {
   flex-direction: var(--R);
   width: var(--w);
   text-align: center;
-  padding: var(--pad2); 
-  height: 75vh;
+  height: 60vh;
   background-color: var(--light);
   font-size: 1.3rem;
 }
@@ -118,15 +117,34 @@ main {
 .div a img{
   display: var(--F);
   flex-direction: var(--R);
+  position: relative; /*need container for text*/
   width: 100%;
   opacity: 1.0;
   border: solid var(--bars);
-}
+  }
  
 .div a img:hover{
-  opacity: 0.5;
+ /* background-image: url(../assets/Screenshot_20230205_102603.png);*/
+  opacity: 0.8;
 }
 
+.card{
+display: var(--F);
+flex-direction: var(--R);
+position: relative; /*need container for text*/
+width: 36%;
+opacity: 1.0;
+text-align: center;
+padding: var(--pad);
+padding-top: 15vh;
+padding bottom: 15vh;
+margin: 0.3%;
+
+}
+
+.card:hover{
+  opacity: 0.8; 
+}
 
 
 
