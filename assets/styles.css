@@ -2,7 +2,7 @@ body {
     line-height: 1.5;
     font-family: Arial, Helvetica, sans-serif;
     color: var(--font);
-    background-color: #f0fcbb;
+    background-color: #fcffef;
   }
   
   :root {
@@ -102,20 +102,22 @@ p{
   border-right: solid var(--bars);
   width: 300px;
 }
-
+/*
 .mainside{
   display: var(--F);
   flex-direction: var(--R);
   width: var(--w);
   text-align: center;
   height: 50vh;
-}
+}*/
 
 .div a img{
   position: relative;
-  width: 100%;
+  width:96%;
   opacity: 1.0;
   border: solid var(--bars);
+  margin: var(--pad);
+  margin-bottom: 50px;
   }
  
 .div a img:hover{
@@ -124,27 +126,38 @@ p{
 }
 
 #cardtextboxmain{
-  position: absolute;  
+  position: absolute; 
+  margin-left: 400px;
+  margin-top: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: solid var(--bars); 
+  color: var(--bars); 
+  background-color:#fcffef8a;
 }
 
-.card{
-position: relative; /*need container for text*/
-width: 36%;
-opacity: 1.0;
-text-align: center;
-padding: var(--pad);
-padding-bottom: 15vh;
-margin: 0.3%;
+.leftcard{
+  width: 100%;
+  justify-content: left;
+  margin-left: 30px;
+  margin-right: 30px;
+  opacity: 1.0;
 }
 
-.card:hover{
+.rightcard{
+  width: 100%;
+  justify-content: right;
+  margin-right: 22px;
+  opacity: 1.0;
+}
+
+.leftcard:hover{
   opacity: 0.8; 
 }
 
-.cardtextbox{
-  position: absolute;
+.leftcard:hover{
+  opacity: 0.8; 
 }
-
 
 footer {
   width: 100%;
