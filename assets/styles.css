@@ -84,6 +84,7 @@ main {
     flex-grow: 1;
 }
 
+/*this made the navigation buttons work*/
 #aboutme{
 }
 #work{
@@ -135,6 +136,7 @@ p{
 }
 
 .leftcard{
+  display: var(--F);
   width: 100%;
   justify-content: left;
   margin-left: 30px;
@@ -143,6 +145,7 @@ p{
 }
 
 .rightcard{
+  display: var(--F);
   width: 100%;
   justify-content: right;
   margin-right: 22px;
@@ -158,12 +161,23 @@ p{
 }
 
 #contact{
-  margin: 200px;
+display: var(--F);
+justify-content: space-evenly;
+margin: 50px;
+margin-left: 200px;
+border: solid var(--font);
+padding: 50px;
+list-style: none;
+width: 100%;
 }
 
 #form{
-color: var(--font);
-margin: 200px;
+display: var(--F);
+justify-content: space-evenly;
+margin: 50px;
+border: solid var(--font);
+padding: 50px;
+width: 100%;
 }
 
 footer {
