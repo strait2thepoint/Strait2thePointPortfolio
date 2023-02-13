@@ -84,6 +84,13 @@ main {
     flex-grow: 1;
 }
 
+#aboutme{
+}
+#work{
+}
+#contactme{
+}
+
 p{
   padding: 40px;
   text-align: center;
@@ -102,14 +109,6 @@ p{
   border-right: solid var(--bars);
   width: 300px;
 }
-/*
-.mainside{
-  display: var(--F);
-  flex-direction: var(--R);
-  width: var(--w);
-  text-align: center;
-  height: 50vh;
-}*/
 
 .div a img{
   position: relative;
@@ -121,7 +120,6 @@ p{
   }
  
 .div a img:hover{
- /* background-image: url(../assets/Screenshot_20230205_102603.png);*/
   opacity: 0.8;
 }
 
@@ -159,13 +157,20 @@ p{
   opacity: 0.8; 
 }
 
+#contact{
+  margin: 200px;
+}
+
+#form{
+color: var(--font);
+margin: 200px;
+}
+
 footer {
   width: 100%;
-  bottom: 0;
-  padding: 20px;
   text-align: center;
   background: var(--bars);
-  margin-top: auto;
+  color: var(--aside)
   }
 
   @media screen and (max-width: 768px) {
