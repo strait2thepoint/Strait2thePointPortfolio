@@ -86,10 +86,15 @@ main {
 
 /*this made the navigation buttons work*/
 #aboutme{
+margin-left: 1px;
 }
+
 #work{
+margin-left: 1px;
 }
+
 #contactme{
+margin-left: 1px;
 }
 
 p{
@@ -178,6 +183,10 @@ margin: 50px;
 border: solid var(--font);
 padding: 50px;
 width: 100%;
+}
+
+#name{
+  color: var(--font);
 }
 
 footer {
